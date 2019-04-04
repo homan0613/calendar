@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ConfigService } from '../config.service';
+import { TasksService } from '../tasks.service';
 import { Task } from '../task';
 
 @Component({
@@ -13,14 +13,14 @@ export class TasksComponent implements OnInit {
 	tasks: Task[];
 
 	constructor(
-		private configService: ConfigService
+		private tasksService: TasksService
 	) { }
 
 	ngOnInit() {
-		this.getHeroes()
+		this.getTasks()
 	}
-	getHeroes(): void {
-		this.configService.getTasks()
+	getTasks(): void {
+		this.tasksService.getTasks()
 			.subscribe(
 				tasks => this.tasks = tasks
 			)
