@@ -5,22 +5,22 @@
 			<span>{{t.id}}</span>
 		</li>
 		<li> <label>Project Id:</label>
-				<span> {{ t.projectId }}</span>		
+			<span> {{ t.projectId }}</span>
 		</li>
 		<li> <label> Task name:</label>
 			<span> {{ t.taskName}} </span>
 		</li>
 		<li> <label>Person id:</label>
-				<span> {{t.personId }}</span>	
+			<span> {{t.personId }}</span>
 		</li>
 		<li> <label> Cost:</label>
-				<span>{{t.cost}} </span>
+			<span>{{t.cost}} </span>
 		</li>
 		<li> <label> Start:</label>
-				<span>{{t.start | date:"yyyy/MM/dd" }}</span>
+			<span>{{t.start | date:"yyyy/MM/dd" }}</span>
 		</li>
 		<li> <label>End:</label>
-				<span> {{ t.end | date:"yyyy/MM/dd" }}</span>
+			<span> {{ t.end | date:"yyyy/MM/dd" }}</span>
 		</li>
 	</ul>
 	<button (click)="goBack()">go back</button>

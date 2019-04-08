@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container lstask">
     <div>
         <ul class="tasks">
             <li *ngFor="let task of tasks">
@@ -7,5 +7,10 @@
                 </a>
             </li>
         </ul>
-    </div>       
+    </div>
+    <div class="partpage">
+        <div *ngFor="let i of pages" class="btpage">
+            <button (click)="partionPage(i)">{{i}}</button>
+        </div>      
+    </div>
 </div>

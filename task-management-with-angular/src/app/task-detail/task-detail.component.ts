@@ -31,12 +31,6 @@ export class TaskDetailComponent implements OnInit {
 			this.task = t;
 		})
 	}
-	// getTasks(): void {
-	// 	this.tasksService.getTasks()
-	// 		.subscribe(
-	// 			tasks => this.tasks = tasks
-	// 		)
-	// }
 	goBack(): void {
 		this.location.back();
 	  }

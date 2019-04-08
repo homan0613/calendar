@@ -22,7 +22,7 @@ export class TasksService {
 		let body = res;
 		return body || {};
 	}
-	
+
 	getTasks(): Observable<any> {
 		return this.http.get(endpoint + 'lists/getall')
 			.pipe(
@@ -36,17 +36,6 @@ export class TasksService {
 				catchError(this.handleError<Task>('gettasks'))
 			)
 	}
-
-	// getTask(id: number): Observable<any> {
-	// 	return this.http.get(endpoint + '/lists/gettask?id=' + id).pipe(
-	// 		map(this.extractData));
-	// }
-	// getTask(id: number): Observable<Task> {
-	// 	console.log(endpoint + '/lists/gettask?id=' + id);
-	// 	return this.http.get<Task>(endpoint + 'lists/gettask?id=' + id).pipe(
-	// 		catchError(this.handleError<Task>(`getTask`))
-	// 	);
-	// }
 
 	addTask(task: Task): Observable<any> {
 		console.log(task);
