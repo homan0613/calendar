@@ -1,0 +1,12 @@
+.gird-month{
+    margin-left: 30%;
+}
+.weekMonth{
+    height: 100px;
+}
+.weekMonth header{
+    text-align: right;
+}
+.weekMonth td{
+    width: 100px;
+}

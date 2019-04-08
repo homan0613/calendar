@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { TaskDetailComponent } from './task-detail/task-detail.component';
+import { DayGridMonthComponent } from './day-grid-month/day-grid-month.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
 		TasksComponent,
-		TaskDetailComponent
+		TaskDetailComponent,
+		DayGridMonthComponent
 	],
 	imports: [
 		BrowserModule,
